@@ -1,5 +1,8 @@
 #pragma once
 #include "Controller.h"
+#include "Instruction.h"
+
+#include <queue>
 
 namespace WashingMachine
 {
@@ -9,6 +12,9 @@ namespace WashingMachine
 	public:
 		ProgramController();
 		~ProgramController();
+		void next();
+	private:
+		std::queue<Instruction> instructionQueue;
 	};
 
 }

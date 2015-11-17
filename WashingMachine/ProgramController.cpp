@@ -13,4 +13,9 @@ namespace WashingMachine
 	{
 	}
 
+	void ProgramController::next()
+	{
+		return this->instructionQueue.pop();
+	}
+
 }
