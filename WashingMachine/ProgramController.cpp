@@ -13,9 +13,21 @@ namespace WashingMachine
 	{
 	}
 
-	void ProgramController::next()
+	Instruction* ProgramController::next()
 	{
-		return this->instructionQueue.pop();
+		if (instructionQueue.empty())
+		{
+			return nullptr;
+		}
+		else
+		{
+			return this->instructionQueue.pop();
+		}
+	}
+
+	void populateQueue()
+	{
+		// Copy all of the instructions into the instructionQueue
 	}
 
 }

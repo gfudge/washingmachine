@@ -1,12 +1,25 @@
 #pragma once
-class Instruction
+
+#include <string>
+
+namespace WashingMachine
 {
-public:
-	Instruction();
-	~Instruction();
+	enum instructionType
+	{
+		ITEM1,
+		ITEM2,
+		ITEM3,
+		ITEM4
+	};
 
-private:
-	enum instruction { instruction1, instruction2, instrcution3, instruction4 };
+	class Instruction
+	{
+	public:
+		Instruction(instructionType instruction, unsigned int value);
+		~Instruction();
 
-};
-
+	private:
+		instructionType instruction;
+		unsigned int value;
+	};
+}

@@ -12,9 +12,10 @@ namespace WashingMachine
 	public:
 		ProgramController();
 		~ProgramController();
-		void next();
+		Instruction* next();
 	private:
 		std::queue<Instruction> instructionQueue;
+		void populateQueue();
 	};
 
 }

@@ -1,11 +1,17 @@
 #include "Instruction.h"
 
-
-Instruction::Instruction()
+namespace WashingMachine
 {
-}
+
+	Instruction::Instruction(WashingMachine::instructionType instruction, unsigned int value)
+	{
+		this->instruction = instruction;
+		this->value = value;
+	}
 
 
-Instruction::~Instruction()
-{
+	Instruction::~Instruction()
+	{
+	}
+
 }

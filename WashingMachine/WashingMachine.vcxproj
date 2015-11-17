@@ -148,6 +148,7 @@
     <ClInclude Include="DeviceController.h" />
     <ClInclude Include="DisplayController.h" />
     <ClInclude Include="InputController.h" />
+    <ClInclude Include="Instruction.h" />
     <ClInclude Include="Interrupt.h" />
     <ClInclude Include="IOController.h" />
     <ClInclude Include="IOInterrupt.h" />
@@ -164,6 +165,7 @@
     <ClCompile Include="DeviceController.cpp" />
     <ClCompile Include="DisplayController.cpp" />
     <ClCompile Include="InputController.cpp" />
+    <ClCompile Include="Instruction.cpp" />
     <ClCompile Include="Interrupt.cpp" />
     <ClCompile Include="IOController.cpp" />
     <ClCompile Include="IOInterrupt.cpp" />
