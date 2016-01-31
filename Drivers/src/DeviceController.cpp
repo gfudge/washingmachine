@@ -11,27 +11,19 @@ namespace WashingMachine
 
 	DeviceController::~DeviceController()
 	{
+		for (unsigned int i; i <= this->getDeviceCount(); i++)
+			delete(this->devices[i]);
 	}
 
-	int DeviceController::numberOfDevices()
+	int DeviceController::getDeviceCount()
 	{
 		return this->devices.size();
 	}
-
-	std::vector<Device*> DeviceController::listOfDevices()
-	{
-		if (this->numberOfDevices() > 0) {
-			return (std::vector<Device*>)devices;
-		}
-		else {
-			return std::vector<Device*>();
-		}
-	}
-
+/*
 	int DeviceController::interrupt(IOInterrupt & interrupt)
 	{
 		this->interruptBuffer.push_back(interrupt);
 		return 0;
 	}
-
+*/
 }

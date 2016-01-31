@@ -1,6 +1,6 @@
 #pragma once
 #include "Device.h"
-#include "IOInterrupt.h"
+//#include "IOInterrupt.h"
 
 /* Standard Libraries */
 #include <vector>
@@ -13,14 +13,13 @@ namespace WashingMachine
 	public:
 		DeviceController();
 		virtual ~DeviceController();
-		int numberOfDevices();
-		std::vector<Device*> listOfDevices();
-
+		int getDeviceCount();
+	
 		/* Interrupt Routines */
-		int interrupt(IOInterrupt & interrupt);
-	private:
+	//	int interrupt(IOInterrupt & interrupt);
+	protected:
 		std::vector<Device*> devices;
-		std::vector<Interrupt> interruptBuffer;
+		//std::vector<Interrupt> interruptBuffer;
 	};
 }
 

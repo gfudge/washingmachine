@@ -10,7 +10,15 @@ namespace WashingMachine
 	{
 	public:
 		BuzzerController();
-		~BuzzerController();
+
+		void on();
+		void off();
+
+		bool getState() { return this->state; };
+
+	private:
+		bool state;
+
 	};
 
 }
